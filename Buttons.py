@@ -38,12 +38,11 @@ def submit():
 
 bottoni.append(Button(root, text ='Seleziona file PDF', command = lambda:open_file(0)))
 bottoni.append(Button(root, text ='Seleziona file Excel', command = lambda:open_file(1)))
-bottoni.append(Button(root, text ='MODIFICA', command = submit))
+bottoni.append(Button(root, text ='MODIFICA', command = lambda:submit()))
 bottoni.append(Button(root, text ='CONFERMA', command = lambda:sys.exit()))
+
 bottoni[0].pack(side = TOP, anchor = NW, pady = 10)
 bottoni[1].pack(side = TOP, anchor = NW, pady = 10)
-
-
 bottoni[2].place(relx=0.3, rely=0.83, anchor=CENTER)
 bottoni[3].place(relx=0.7, rely=0.83, anchor=CENTER)
 testo = Entry(root, textvariable=valore, width = 20).pack(anchor = NW, pady = 10)
