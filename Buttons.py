@@ -5,6 +5,7 @@ import os
 from tkinter.filedialog import askopenfilename
 
 def frameRichiediFile():
+    
 
     def caricaFile(button, fileType):
         file = askopenfilename(filetypes = fileType)
